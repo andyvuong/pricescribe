@@ -1,0 +1,23 @@
+<ion-view view-title="home">
+    <ion-content class="padding">
+        <h1 class="text-center">Welcome</h1>
+        <p class="text-center">Welcome to Price Scribe! Price Scribe makes managing your budget easier by helping you keep track of your everyday expenses. Use Price Scribe to keep track of the items you purchase, money you spend every day, and manage your budget.</p>
+
+        <h3 class="text-center">Log In</h3>
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="Email" ng-model="loginInfo.email">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Password" ng-model="loginInfo.password">
+            </label>
+        </div>
+        <a ng-click="login()"><button class="button button-block button-positive">
+            Log In
+        </button></a>
+        <a href="#/signup"><button class="button button-block button-balanced">
+            Create Account
+        </button></a>
+        <h4>{{alert}}</h4>
+    </ion-content>
+</ion-view>

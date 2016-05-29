@@ -1,0 +1,19 @@
+<ion-view view-title="addreceipt">
+    <ion-content class="padding">
+        <h5><strong>Welcome!</strong> Upload a Receipt!</h5>
+        <button class = "button" ng-click = "takePicture()">Take Picture</button>
+        <button class = "button" ng-click = "getPicture()">Open Gallery</button>
+        <img ng-src = "{{user.picture}}">
+        <hr>
+        <h3>Statistics:</h3>
+        <h5>Total Spendings: <strong>${{statsTotal}}</strong></h5>
+        <h5>Average Receipt Total: <strong>${{statsAverage}}</strong></h5>
+        <h5>Total Uploads: <strong>{{statsCount}}</strong></h5>
+        <hr>
+        <h3>Receipts</h3>
+        <canvas id="line" class="chart chart-line" chart-data="data"
+          chart-labels="labels" chart-legend="true" chart-series="series"
+          chart-click="onClick" >
+        </canvas> 
+    </ion-content>
+</ion-view>
