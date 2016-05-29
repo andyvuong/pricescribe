@@ -1,0 +1,34 @@
+<div class="entry-flow">
+    <div class="container">
+        <h2 class="text-center">Login</h2>
+        <div class="row">
+            <hr>    
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input ng-model="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input ng-model="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-sm-6">
+                <a ng-click="login()"><button type="button" class="btn btn-success text-center">Submit</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="#/signup"><button type="button" class="btn btn-info text-center">Signup</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <h3>{{alert}}</h3>
+        </div>
+    </div>
+</div>

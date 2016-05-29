@@ -1,0 +1,40 @@
+<div id="dashboard-add">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#/dashboard"><button type="button" class="btn btn-info text-center">Dashboard</button></a>
+            </div>
+            <div class="col-sm-3">
+                <a ng-click="logoff()"><button type="button" class="btn btn-danger text-center">Log off</button></a>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4 text-center">
+                <form name="upload_form" class="text-center">
+                Single Image with validations
+                    <input  style="margin-left: auto; margin-right: auto;" type="file" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'" accept="image/*" ngf-max-size="2MB" />
+                    <i ng-show="upload_form.file.$error.maxSize">File too large 
+                    {{file.size / 1000000|number:1}}MB: max 2M</i>
+                    <button type="submit" ng-click="submit()">submit</button>
+                    <p>{{up.progress}}</p>
+                </form>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+        <div class="row">
+            <br>
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4 text-center ">
+                <i ng-show="spinning" id="spinner" class="fa fa-spinner fa-spin fa-5x ng-hide" aria-hidden="true"></i>
+                <h4>{{status}}</h4>
+            </div>
+            <div class="col-sm-4">
+            </div>
+        </div>
+    </div>
+</div>

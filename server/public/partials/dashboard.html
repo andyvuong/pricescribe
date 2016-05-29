@@ -1,0 +1,40 @@
+<div id="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#/addreceipt"><button type="button" class="btn btn-info text-center">Add Receipt</button></a>
+            </div>
+            <div class="col-sm-3">
+                <a ng-click="logoff()"><button type="button" class="btn btn-danger text-center">Log off</button></a>
+            </div>
+        </div>
+        <div class="row">
+        <hr>
+            <h4>Welcome back, <strong>{{currentUser.name}}!</strong></h4>
+            <div class="col-sm-6">
+                <h3>Today</h3>
+                <h4>Today is <strong>{{currentDay}}!</strong></h4>
+            </div>
+            <div class="col-sm-6">
+                <h3>Recent Activity</h3>
+                <h4>The last receipt you uploaded was at <strong>{{recentDate}}</strong> for: <strong>${{recentPrice}}</strong></h4>
+            </div>
+        </div>
+        <div class="row">
+            <hr>
+            <div class="col-sm-6">
+                <canvas id="line" class="chart chart-line" chart-data="data"
+                  chart-labels="labels" chart-legend="true" chart-series="series"
+                  chart-click="onClick" >
+                </canvas> 
+            </div>
+            <div class="col-sm-6">
+                <h3>Statistics:</h3>
+                <hr>
+                <h5>Total Spendings: <strong>${{statsTotal}}</strong></h5>
+                <h5>Average Receipt Total: <strong>${{statsAverage}}</strong></h5>
+                <h5>Total Uploads: <strong>{{statsCount}}</strong></h5>
+            </div>
+        </div>
+    </div>
+</div>

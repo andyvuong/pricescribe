@@ -1,0 +1,100 @@
+/* line 1, ../../_sass/_base.scss */
+body {
+  height: 100vh; }
+
+/* line 5, ../../_sass/_base.scss */
+#main-container {
+  position: relative;
+  height: 100%; }
+
+/* line 10, ../../_sass/_base.scss */
+#footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+  /* line 15, ../../_sass/_base.scss */
+  #footer ul {
+    text-align: center; }
+    /* line 18, ../../_sass/_base.scss */
+    #footer ul li {
+      padding-left: 1%;
+      padding-right: 1%; }
+
+/* line 25, ../../_sass/_base.scss */
+.menu {
+  list-style: none; }
+
+/* line 31, ../../_sass/_base.scss */
+.entry-flow h1 {
+  font-size: 4em; }
+/* line 35, ../../_sass/_base.scss */
+.entry-flow h2 {
+  font-size: 3em; }
+/* line 39, ../../_sass/_base.scss */
+.entry-flow p {
+  font-size: 1.75em; }
+/* line 43, ../../_sass/_base.scss */
+.entry-flow .container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+/* line 49, ../../_sass/_base.scss */
+.entry-flow .btn {
+  width: 100%;
+  font-size: 2em; }
+
+/* line 58, ../../_sass/_base.scss */
+#dashboard h1 {
+  font-size: 4em; }
+/* line 62, ../../_sass/_base.scss */
+#dashboard h2 {
+  font-size: 3em; }
+/* line 66, ../../_sass/_base.scss */
+#dashboard p {
+  font-size: 1.75em; }
+/* line 70, ../../_sass/_base.scss */
+#dashboard .container {
+  margin-top: 1%;
+  margin-bottom: 1%; }
+/* line 75, ../../_sass/_base.scss */
+#dashboard .btn {
+  width: 100%;
+  font-size: 2em; }
+
+/* line 84, ../../_sass/_base.scss */
+#dashboard-add .container {
+  margin-top: 1%;
+  margin-bottom: 1%; }
+/* line 89, ../../_sass/_base.scss */
+#dashboard-add .btn {
+  width: 100%;
+  font-size: 2em; }
+
+/* line 96, ../../_sass/_base.scss */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges; }
+
+/* line 104, ../../_sass/_base.scss */
+.label {
+  font-size: 1.1em;
+  font-family: 'Ropa Sans', sans-serif; }
+
+/* line 109, ../../_sass/_base.scss */
+#chart {
+  width: 100%; }
+
+/* line 113, ../../_sass/_base.scss */
+svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+/* line 119, ../../_sass/_base.scss */
+.path_sen {
+  stroke: #355C7D;
+  stroke-width: 2;
+  fill: none; }

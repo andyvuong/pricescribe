@@ -1,0 +1,127 @@
+body {
+    height: 100vh;
+}
+
+#main-container {
+    position: relative;
+    height: 100%;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    ul {
+        text-align: center;
+
+        li {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
+}
+
+.menu {
+    list-style: none;
+}
+
+.entry-flow {
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.75em;
+    }
+
+    .container {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 2em;
+    }
+
+}
+
+#dashboard {
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.75em;
+    }
+
+    .container {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 2em;
+    }
+
+    span {
+        color: #CC5D4C;
+    }
+
+}
+
+#dashboard-add {
+    
+    .container {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 2em;
+    }
+
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.label {
+    font-size: 1.1em;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+#chart {
+    width: 100%;
+}
+
+svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.path_sen { 
+    stroke: #355C7D;
+    stroke-width: 2;
+    fill: none;
+}

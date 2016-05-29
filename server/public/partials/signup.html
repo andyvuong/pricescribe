@@ -1,0 +1,45 @@
+<div class="entry-flow">
+    <div class="container">
+        <h2 class="text-center">Signup</h2>
+        <div class="row">
+            <hr>    
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input ng-model='firstName' type="text" class="form-control" id="inputEmail3" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input ng-model='lastName' type="text" class="form-control" id="inputEmail3" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input ng-model='email' type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input ng-model='password' type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Repeat Password</label>
+                    <div class="col-sm-10">
+                        <input ng-model='repeatPassword' type="password" class="form-control" id="inputPassword3" placeholder="Repeat Password">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <hr>
+            <a class="text-center" ng-click='submit()'><button type="button" class="btn btn-success text-center">Sign Up</button></a>
+            <h3>{{alert}}</h3>
+        </div>
+    </div>
+</div>
